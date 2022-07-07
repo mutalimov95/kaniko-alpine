@@ -3,7 +3,7 @@ FROM gcr.io/kaniko-project/executor as kaniko
 
 # Install bash and git on alpine
 # Coreutils required: https://github.com/bats-core/bats-core/issues/83
-FROM alpine
+FROM alpine:3.16
 RUN apk update
 RUN apk add bash git coreutils
 
